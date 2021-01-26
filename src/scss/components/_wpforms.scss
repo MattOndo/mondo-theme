@@ -1,0 +1,24 @@
+div.wpforms-container-full .wpforms-form input.wpforms-field-medium,
+div.wpforms-container-full .wpforms-form select.wpforms-field-medium,
+div.wpforms-container-full
+	.wpforms-form
+	.wpforms-field-row.wpforms-field-medium {
+	max-width: 100%;
+}
+
+.wpforms-container {
+	max-width: 600px;
+
+	button.wpforms-submit {
+		width: 100%;
+		background-color: $blue !important;
+		color: $white !important;
+		border: 0 !important;
+		outline: 0 !important;
+		transition: background-color 200ms ease;
+
+		&:hover {
+			background-color: darken($blue, 10%) !important;
+		}
+	}
+}

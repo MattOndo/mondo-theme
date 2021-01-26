@@ -1,0 +1,6 @@
+@media screen and (min-width: 782px) {
+	.wp-block-columns.flex-row-reverse-ns .wp-block-column:not(:first-child) {
+		margin-left: 0;
+		margin-right: 2em;
+	}
+}

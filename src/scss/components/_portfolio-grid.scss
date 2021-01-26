@@ -1,0 +1,44 @@
+.portfolio-grid {
+	a {
+		color: inherit;
+	}
+
+	.portfolio-item {
+		.portfolio-item__category {
+			position: absolute;
+			top: -28px;
+			right: 0;
+			z-index: 999;
+			border-radius: 3px;
+			padding: 5px;
+
+			a {
+				text-decoration: none;
+				cursor: default;
+				pointer-events: none;
+			}
+		}
+
+		.portfolio-item__thumbnail {
+			.aspect-ratio--object {
+				border-radius: 3px;
+			}
+		}
+	}
+
+	@media screen and (min-width: 768px) {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: max-content;
+		gap: 4em 4em;
+		grid-template-areas: ". .";
+	}
+
+	@media screen and (min-width: 992px) {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: max-content;
+		gap: 4em 4em;
+		grid-template-areas: ". . .";
+	}
+}

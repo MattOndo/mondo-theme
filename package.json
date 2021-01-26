@@ -1,0 +1,40 @@
+{
+	"name": "mondo-theme",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "gulp compile",
+		"watch": "gulp watch"
+	},
+	"author": "Matt Ondo",
+	"license": "GNU",
+	"devDependencies": {
+		"gulp": "^4.0.2",
+		"gulp-autoprefixer": "latest",
+		"gulp-concat": "^2.6.1",
+		"gulp-plumber": "^1.2.1",
+		"gulp-rename": "^1.4.0",
+		"gulp-ruby-sass": "^4.0.0",
+		"gulp-sass": "^4.1.0",
+		"gulp-sourcemaps": "^2.6.5",
+		"gulp-typescript": "^6.0.0-alpha.1",
+		"gulp-uglify": "^3.0.2",
+		"vinyl-buffer": "^1.0.1",
+		"yargs-parser": ">=5.0.0-security.0"
+	},
+	"browserslist": [
+		"> 1%",
+		"ie >= 8",
+		"edge >= 15",
+		"ie_mob >= 10",
+		"ff >= 45",
+		"chrome >= 45",
+		"safari >= 7",
+		"opera >= 23",
+		"ios >= 7",
+		"android >= 4",
+		"bb >= 10"
+	],
+	"dependencies": {}
+}

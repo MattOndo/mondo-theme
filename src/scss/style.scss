@@ -1,0 +1,24 @@
+/*!
+  Theme Name: Matt Ondo
+  Theme URI: https://github.com/MattOndo/mondo-theme
+  Author: Matt Ondo
+  Author URI: https://mattondo.io/
+  Description: A custom theme for my Website
+  Version: 1.0.0
+  License: GNU General Public License v3 or later.
+  License URI: https://www.gnu.org/licenses/gpl-3.0.html
+  Text Domain: mondo-theme
+*/
+@import "helpers/variables";
+@import "vendor/tachyons-sass-master/tachyons.scss";
+@import "vendor/tachyons-aspect-ratio.scss";
+@import "components/typography";
+@import "components/layout";
+@import "components/menu";
+@import "components/block_columns";
+@import "components/block_video";
+@import "components/images";
+@import "components/archive";
+@import "components/portfolio-grid";
+@import "components/wpforms";
+@import "components/lightbox";
