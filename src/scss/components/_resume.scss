@@ -1,0 +1,83 @@
+body.page-id-752 {
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p {
+		font-family: "Roboto", "Arial";
+	}
+	h3 {
+		margin: 16px 0 0 0;
+	}
+	.wp-block-columns {
+		align-items: flex-end;
+	}
+
+	@media print {
+		* {
+			-webkit-print-color-adjust: exact !important; /* Chrome, Safari */
+			color-adjust: exact !important; /*Firefox*/
+		}
+
+		// Background img
+		&:before {
+			top: -50px;
+			left: -100px;
+			width: 80%;
+			height: 100%;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		p {
+			font-family: "Roboto", "Arial";
+		}
+
+		h1 {
+			font-size: 21px;
+		}
+		h2 {
+			font-size: 18px;
+		}
+		h3 {
+			font-size: 16px;
+			margin: 0;
+		}
+		h4 {
+			font-size: 12px;
+		}
+		h5 {
+			font-size: 10px;
+		}
+		h6 {
+			font-size: 10px;
+		}
+
+		p {
+			margin-top: 0;
+		}
+
+		.wp-block-columns {
+			flex-wrap: nowrap;
+			margin-bottom: 16px;
+		}
+		#container {
+			margin: 1in;
+		}
+		#header,
+		#space,
+		#footer {
+			display: none;
+		}
+	}
+}
+@media print {
+	@page {
+		margin: 0;
+	}
+}

@@ -4,8 +4,7 @@ $menu = (function () {
 	var $menu_button = document.querySelector("#menu button");
 	var $page_wrapper = document.querySelector("#wrapper");
 	var $logo = document.querySelector("#logo");
-	var xDown = null;
-	var yDown = null;
+	var $headerContainer = document.querySelector("#header");
 
 	// Status
 	var menu_is_open = function () {
@@ -77,10 +76,21 @@ $menu = (function () {
 		yDown = null;
 	};
 
+	// Scroll
+	var scrollHandler = function () {
+		if (window.pageYOffset >= 1) {
+			$headerContainer.classList.add("is-scrolled");
+		} else {
+			$headerContainer.classList.remove("is-scrolled");
+		}
+	};
+
 	// Event Listeners
 	window.addEventListener("load", function (event) {
+		scrollHandler();
 		$menu_button.addEventListener("click", handleNav, false);
 		document.addEventListener("touchstart", handleTouchStart, false);
 		document.addEventListener("touchmove", handleTouchMove, false);
+		window.addEventListener("scroll", scrollHandler);
 	});
 })();

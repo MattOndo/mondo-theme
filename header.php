@@ -77,7 +77,7 @@
               } else if (is_home()) {
                 echo "Matt's Thoughts";
               } else {
-                echo the_title();
+                echo the_title('Matt\'s ','');
               }
             ?>
             </h1>
@@ -91,5 +91,5 @@
           </button>
         </nav>
       </header>
-      <div class="h4"></div>
+      <div id="space" class="h4"></div>
       <div id="container" class="pt2">

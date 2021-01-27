@@ -1,6 +1,11 @@
 #header {
 	z-index: 9999999;
-	background: rgba($white, 0.75);
+	background: none;
+	transition: background 300ms ease-in-out;
+
+	&.is-scrolled {
+		background: rgba($white, 0.75);
+	}
 }
 
 ul.menu {

@@ -9,7 +9,7 @@ get_header();
       // You can list your posts here
       the_post();
     ?>
-      <article class="archive-item flex flex-column flex-row-ns items-center mt6">
+      <article class="archive-item flex flex-column flex-row-ns items-center mt4">
         <div class="post-thumbnail w-100 w-40-ns pr0 pr4-ns">
           <a href="<?php the_permalink(); ?>">
             <?php the_post_thumbnail(); ?>
