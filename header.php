@@ -73,14 +73,12 @@
           <?php if (!is_front_page()) { ?>
             <h1 class="f3">
             <?php 
-              if (is_archive() || is_category() || is_tag() || is_tax() || is_author()) {
+              if (is_archive() || is_category() || is_tag() || is_tax() || is_author() || is_home()) {
                 echo the_archive_title('Matt\'s ','');
-              } else if (is_home()) {
-                echo "Matt's Thoughts";
               } else if (is_single()) {
                 echo the_title();
               } else {
-                echo the_title('Matt\'s ','');
+                echo the_title();
               }
             ?>
             </h1>

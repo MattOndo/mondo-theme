@@ -1,6 +1,7 @@
-img {
+img,
+.wp-block-image img {
 	margin: 0 auto;
-	border-radius: 3px;
+	border-radius: 3px !important;
 	height: auto;
 }
 

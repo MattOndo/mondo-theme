@@ -2,10 +2,12 @@
 
 $font-family-default: "Open Sans", sans-serif;
 $font-family-heading: "Gochi Hand", cursive;
+$sans-serif: "Open Sans", sans-serif !default;
+$serif: "Gochi Hand", cursive !default;
 
-$sans-serif: -apple-system, BlinkMacSystemFont, "avenir next", avenir, helvetica,
-	"helvetica neue", ubuntu, roboto, noto, "segoe ui", arial, sans-serif !default;
-$serif: georgia, serif !default;
+$offcanvas-transition-wrapper: all 100ms ease-in-out;
+$offcanvas-transition-offcanvas: all 200ms ease-in-out;
+
 $code: consolas, monaco, monospace !default;
 $font-size-headline: 6rem !default;
 $font-size-subheadline: 5rem !default;

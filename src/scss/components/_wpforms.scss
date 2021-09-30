@@ -1,3 +1,29 @@
+div.wpforms-container-full .wpforms-form {
+	input[type="date"],
+	input[type="datetime"],
+	input[type="datetime-local"],
+	input[type="email"],
+	input[type="month"],
+	input[type="number"],
+	input[type="password"],
+	input[type="range"],
+	input[type="search"],
+	input[type="tel"],
+	input[type="text"],
+	input[type="time"],
+	input[type="url"],
+	input[type="week"],
+	select,
+	textarea,
+	textarea:focus {
+		font-family: $font-family-heading;
+		border-top: none;
+		border-right: none;
+		border-left: none;
+		background: rgba(0, 0, 0, 0.015);
+	}
+}
+
 div.wpforms-container-full .wpforms-form input.wpforms-field-medium,
 div.wpforms-container-full .wpforms-form select.wpforms-field-medium,
 div.wpforms-container-full

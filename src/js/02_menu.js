@@ -38,44 +38,6 @@ $menu = (function () {
 		); // jQuery
 	};
 
-	var handleTouchStart = function (evt) {
-		var firstTouch = getTouches(evt)[0];
-		xDown = firstTouch.clientX;
-		yDown = firstTouch.clientY;
-	};
-
-	var handleTouchMove = function (evt) {
-		if (!xDown || !yDown) {
-			return;
-		}
-
-		var xUp = evt.touches[0].clientX;
-		var yUp = evt.touches[0].clientY;
-
-		var xDiff = xDown - xUp;
-		var yDiff = yDown - yUp;
-
-		if (Math.abs(xDiff) > Math.abs(yDiff)) {
-			/*most significant*/
-			if (xDiff > 0) {
-				/* left swipe */
-				if (!menu_is_open()) handleNav();
-			} else {
-				/* right swipe */
-				if (menu_is_open()) handleNav();
-			}
-		} else {
-			if (yDiff > 0) {
-				/* up swipe */
-			} else {
-				/* down swipe */
-			}
-		}
-		/* reset values */
-		xDown = null;
-		yDown = null;
-	};
-
 	// Scroll
 	var scrollHandler = function () {
 		if (window.pageYOffset >= 1) {
@@ -87,10 +49,10 @@ $menu = (function () {
 
 	// Event Listeners
 	window.addEventListener("load", function (event) {
-		scrollHandler();
-		$menu_button.addEventListener("click", handleNav, false);
-		document.addEventListener("touchstart", handleTouchStart, false);
-		document.addEventListener("touchmove", handleTouchMove, false);
+		// scrollHandler();
 		window.addEventListener("scroll", scrollHandler);
+		$menu_button.addEventListener("click", handleNav, false);
+		// document.addEventListener("touchstart", handleTouchStart, false);
+		// document.addEventListener("touchmove", handleTouchMove, false);
 	});
 })();

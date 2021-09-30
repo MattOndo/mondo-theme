@@ -40,7 +40,7 @@ body {
 	margin: 0 auto;
 }
 #wrapper {
-	transition: all 500ms linear;
+	transition: $offcanvas-transition-wrapper;
 	&.nav-is-open {
 		margin-left: -100%;
 	}
